@@ -29,18 +29,18 @@ Let's start by sharing the changes we've made to our current project with the
 world.  Log in to GitHub, then click on the icon in the top right corner to
 create a new repository called `planets`:
 
-![Creating a Repository on GitHub (Step 1)](../fig/github-create-repo-01.png)
+![Creating a Repository on Bitbucket (Step 1)](../fig/bitbucket-create-repo-01.png)
 
 Name your repository "planets" and then click "Create Repository":
 
-![Creating a Repository on GitHub (Step 2)](../fig/github-create-repo-02.png)
+![Creating a Repository on Bitbucket (Step 2)](../fig/bitbucket-create-repo-02.png)
 
 As soon as the repository is created, GitHub displays a page with a URL and some
 information on how to configure your local repository:
 
-![Creating a Repository on GitHub (Step 3)](../fig/github-create-repo-03.png)
+![Creating a Repository on Bitbucket (Step 3)](../fig/bitbucket-create-repo-03.png)
 
-This effectively does the following on GitHub's servers:
+This effectively does the following on Bitbucket's servers:
 
 ~~~
 $ mkdir planets
@@ -60,14 +60,14 @@ Now that we have two repositories, we need a diagram like this:
 ![Freshly-Made GitHub Repository](../fig/git-freshly-made-github-repo.svg)
 
 Note that our local repository still contains our earlier work on `mars.txt`, but the
-remote repository on GitHub appears empty as it doesn't contain any files yet.
+remote repository on Bitbucket appears empty as it doesn't contain any files yet.
 
 The next step is to connect the two repositories.  We do this by making the
-GitHub repository a [remote]({{ page.root }}/reference/#remote) for the local repository.
-The home page of the repository on GitHub includes the string we need to
+Bitbucket repository a [remote]({{ page.root }}/reference/#remote) for the local repository.
+The home page of the repository on Bitbucket includes the string we need to
 identify it:
 
-![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
+![Where to Find Repository URL on GitHub](../fig/bitbucket-create-repo-4.png)
 
 Click on the 'HTTPS' link to change the [protocol]({{ page.root }}/reference/#protocol) from
 SSH to HTTPS.
@@ -83,10 +83,10 @@ SSH to HTTPS.
 > (this one has a screencast).
 {: .callout}
 
-![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
+![Changing the Repository URL on Bitbucket](../fig/github-change-repo-string.png)
 
 Copy that URL from the browser, go into the local `planets` repository, and run
-this command:
+this command (this will look slightly different for your Bitbucket account):
 
 ~~~
 $ git remote add origin https://github.com/vlad/planets.git
@@ -179,7 +179,7 @@ Branch master set up to track remote branch master from origin.
 
 Our local and remote repositories are now in this state:
 
-![GitHub Repository After First Push](../fig/github-repo-after-first-push.svg)
+![Bitbucket Repository After First Push](../fig/github-repo-after-first-push.svg)
 
 > ## The '-u' Flag
 >
@@ -206,7 +206,7 @@ Already up-to-date.
 
 Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
-GitHub, though, this command would download them to our local repository.
+Bitbucket, though, this command would download them to our local repository.
 
 > ## GitHub GUI
 >
